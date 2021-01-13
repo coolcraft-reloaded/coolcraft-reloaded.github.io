@@ -1,4 +1,8 @@
 @font-face {
     font-family: odin-sans;
-    src: url(sansation_light.woff);
+    src: url(https://github.com/xc0de113acxx/cc-reloaded/raw/main/fontfiles/Odin%20Rounded%20-%20Regular.otf);
+}
+.page-title {
+    font-family: odin-sans;
+    text-align: center;
 }
