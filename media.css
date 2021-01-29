@@ -1,0 +1,397 @@
+div.mediajs-audio-container {
+    height: 50px;
+    width: 100%;
+    background: lightgrey;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+div.mediajs-video-container {
+    height: 90vh;
+    width: 98.75vw;
+    background: black;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+    justify-content: center;
+}
+div.mediajs-video-control-bar {
+    height: 50px;
+    width: 100%;
+    background: lightgrey;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    visibility: hidden;
+}
+button.mediajs-play-control {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+}
+button.mediajs-play-control:hover {
+    color: darkgrey;
+}
+i.mediajs-play-icon {
+    text-shadow: 2px 2px 0px black;
+}
+button.mediajs-play-control:hover i.mediajs-play-icon {
+    text-shadow: 2px 2px 0px darkgrey;
+}
+div.mediajs-length-bar {
+    background: darkgrey;
+    width: 80%;
+    height: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 3.25%;
+    position: absolute;
+    z-index: 1;
+}
+div.mediajs-preload-canvas {
+    height: 10px;
+    position: absolute;
+    z-index: 2;
+    max-width: 80%;
+    border: none;
+    border-radius: 8px;
+    margin-left: 3.25%;
+    background: black;
+}
+div.mediajs-video-length-bar {
+    background: darkgrey;
+    width: 70%;
+    height: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 3.25%;
+    position: absolute;
+    z-index: 1;
+}
+div.mediajs-video-preload-canvas {
+    height: 10px;
+    position: absolute;
+    z-index: 2;
+    max-width: 70%;
+    border: none;
+    border-radius: 8px;
+    margin-left: 3.25%;
+    background: black;
+}
+span.mediajs-current-time {
+    margin-left: 83.75%;
+    position: absolute;
+    z-index: 3;
+    font-family: Helvetica;
+}
+span.mediajs-full-length {
+    margin-left: 87%;
+    position: absolute;
+    z-index: 3;
+    font-family: Helvetica;
+}
+span.mediajs-video-current-time {
+    margin-left: 74%;
+    position: absolute;
+    z-index: 3;
+    font-family: Helvetica;
+}
+span.mediajs-video-full-length {
+    margin-left: 77.25%;
+    position: absolute;
+    z-index: 3;
+    font-family: Helvetica;
+}
+span.mediajs-time-preview-caret {
+    color: black;
+    position: absolute;
+    z-index: 5;
+    margin-top: 1.5%;
+    margin-left: 3%;
+    display: none;
+}
+span.mediajs-time-preview {
+    border: 1px solid black;
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    z-index: 4;
+    margin-left: 2.25%;
+    margin-top: 4%;
+    display: none;
+    font-family: Helvetica;
+    text-align: center;
+}
+div.mediajs-volume-control {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 6;
+    margin-left: 90.5%;
+    height: 20px;
+    width: 20%;
+    background: none;
+}
+div.mediajs-video-volume-control {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 6;
+    margin-left: 80.75%;
+    height: 20px;
+    width: 20%;
+    background: none;
+}
+button.mediajs-volume-control-1 {
+    height: 10px;
+    width: 5px;
+    background: black;
+    margin-left: 0px;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -0.5vh;
+    cursor: pointer;
+    outline: none;
+}
+button.mediajs-volume-control-2 {
+    height: 15px;
+    width: 5px;
+    background: black;
+    margin-left: 15px;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -0.5vh;
+    cursor: pointer;
+    outline: none;
+}
+button.mediajs-volume-control-3 {
+    height: 20px;
+    width: 5px;
+    background: black;
+    margin-left: 30px;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -0.5vh;
+    cursor: pointer;
+    outline: none;
+}
+button.mediajs-volume-control-4 {
+    height: 25px;
+    width: 5px;
+    background: black;
+    margin-left: 45px;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -0.5vh;
+    cursor: pointer;
+    outline: none;
+}
+button.mediajs-volume-control-5 {
+    height: 30px;
+    width: 5px;
+    background: black;
+    margin-left: 60px;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -0.5vh;
+    cursor: pointer;
+    outline: none;
+}
+button.mediajs-mute-control {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-left: 75px;
+    position: absolute;
+    bottom: -0.75vh;
+}
+
+
+button.mediajs-video-volume-control-1 {
+    height: 10px;
+    width: 5px;
+    background: black;
+    margin-left: 50px;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -0.5vh;
+    cursor: pointer;
+    outline: none;
+}
+button.mediajs-video-volume-control-2 {
+    height: 15px;
+    width: 5px;
+    background: black;
+    margin-left: 65px;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -0.5vh;
+    cursor: pointer;
+    outline: none;
+}
+button.mediajs-video-volume-control-3 {
+    height: 20px;
+    width: 5px;
+    background: black;
+    margin-left: 80px;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -0.5vh;
+    cursor: pointer;
+    outline: none;
+}
+button.mediajs-video-volume-control-4 {
+    height: 25px;
+    width: 5px;
+    background: black;
+    margin-left: 95px;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -0.5vh;
+    cursor: pointer;
+    outline: none;
+}
+button.mediajs-video-volume-control-5 {
+    height: 30px;
+    width: 5px;
+    background: black;
+    margin-left: 110px;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -0.5vh;
+    cursor: pointer;
+    outline: none;
+}
+button.mediajs-video-mute-control {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-left: 125px;
+    position: absolute;
+    bottom: -0.75vh;
+}
+button.mediajs-picture-in-picture-control {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-left: 165px;
+    position: absolute;
+    bottom: -1.5vh;
+}
+button.mediajs-fullscreen-control {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-left: 215px;
+    position: absolute;
+    bottom: -0.75vh;
+}
+video.mediajs-video {
+    opacity: 1;
+    position: absolute;
+    z-index: 0;
+    margin-top: 0vh;
+    height: 99%;
+    width: 99%;
+    border: none;
+    border-radius: 8px;
+}
+video.mediajs-video::-webkit-media-controls-enclosure {
+  display:none !important;
+}
+div.mediajs-video-controls {
+    z-index: 2147483647;
+    display: none;
+}
+div.mediajs-video-controls:-moz-full-screen { position: fixed; }
+div.mediajs-video-controls:-webkit-full-screen { position: fixed; }
+div.mediajs-video-controls:-ms-fullscreen { position: fixed; }
+div.mediajs-video-controls:fullscreen { position: fixed; }
+div.mediajs-video-controls { position: absolute; bottom: 0; right: 0; left: 0; width: 99%; }
+.mediajs-big-play-button {
+    padding: 32px 48px;
+    background: #FF0000;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    outline: none;
+}
+.mediajs-big-play-button:hover {
+    background: #8B0000;
+    animation: darkRed 0.4s;
+}
+.mediajs-darkRed {
+    animation: lightRed 0.6s;
+}
+@keyframes darkRed {
+    0% {
+        background: #FF0000;
+    }
+    100% {
+        background: #8B0000;
+    }
+}
+@keyframes lightRed {
+    0% {
+        background: #8B0000;
+    }
+    100% {
+        background: #FF0000;
+    }
+}
+.mediajs-volume-status {
+    z-index: 2147483647;
+    background: darkgrey;
+    position: absolute;
+    padding: 32px 32px;
+    border-radius: 16px;
+    border: none;
+    opacity: 0.6;
+    display: none;
+    font-size: 18px;
+    font-family: Helvetica;
+}
+.mediajs-volume-fadeout {
+    animation: volFadeOut 1s;
+}
+@keyframes volFadeOut {
+    0% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0;
+    }
+}
