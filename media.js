@@ -673,7 +673,8 @@ function mvjs(id, ch, h, w) {
         js = document.createElement('script');
         js.src = 'https://cdn.jsdelivr.net/npm/@thelevicole/youtube-to-html5-loader@4.0.0/dist/YouTubeToHtml5.min.js';
         js.onload = function() {
-            videoEl.dataset.yt2html5 = "youtube.com/watch?v=_lbX70_Y3qo";
+            var videoSrc = vidsrc.src;
+            videoEl.dataset.yt2html5 = videoSrc;
             var player = new YouTubeToHtml5({
                 autoload: false,
                 withAudio: true
